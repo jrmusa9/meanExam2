@@ -1,0 +1,8 @@
+<h3>New Question</h3><br><br>
+<form (submit) = 'newQuestion()'>
+    Question:<br><textarea name="" name="question" id="" cols="30" rows="10" [(ngModel)]='question.question'></textarea><br>
+    Description (optional):<br><textarea name="" name="description" id="" cols="30" rows="10" [(ngModel)]='question.description'></textarea><br>
+    <input type="Submit" value="Create Poll">
+  </form>
+  <button (click)='goBack()' >Cancel</button>
+<br>

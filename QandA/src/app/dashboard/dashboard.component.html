@@ -1,0 +1,19 @@
+<h3>Hi {{NAME}}</h3>
+<a [routerLink]="['/new_question']" *ngFor='let x of session'>Add a new question</a>
+<a (click)='logOut()'>Log out</a>
+<table>
+  <tr>
+    <th>Question</th>
+    <th></th>
+    <th>Answers</th>
+    <th>Action</th>
+  </tr>
+  <tr  *ngFor='let i of questions' >
+    <td>{{i.question}}<td>
+    <td>{{i._answersId }}<td>
+    <td>
+      <button (click)='getOneQuestion(i._id)'> Show </button>
+      <button (click)='goToAnswer(i._id)'> Answer  </button>
+    </td>
+  </tr>
+</table>

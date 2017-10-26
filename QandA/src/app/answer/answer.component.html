@@ -1,0 +1,12 @@
+<h3>QUESTION</h3>
+<p>DETAIL</p><br><br>
+
+<h1>{{question.question}}</h1>
+<h1>{{question.detail}}</h1>
+
+<form (submit) = 'newAnswer()'>
+    Your Answer:<br><textarea name="" name="answer" id="" cols="30" rows="10" [(ngModel)]='answer.answer'></textarea><br>
+    Details:<br><textarea name="" name="detail" id="" cols="30" rows="10" [(ngModel)]='answer.detail'></textarea><br>
+    <input type="Submit" value="Create Poll">
+  </form>
+  <button (click)='cancel()'>Cancel</button>
